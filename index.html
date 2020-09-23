@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" href="styles/style.css"/>
+        <title>Simple Interest</title>
+    </head>
+    <body>
+        
+        <div class="top">
+   <h2 class="top-output">Simple Interest</h2>
+   <hr>
+   <p class="top-output">To calculate Simple Interest: Enter principal, rate and time</p>
+            <hr>
+   <h2 class="top-output" id="output"></h2>
+         
+        </div>
+        
+        <div class="input-val">
+    <form class="form-input" action="index.htl" method="post"> 
+
+        <input autofocus type="number" class="a"  placeholder="Principal"/><br> 
+        <input autofocus type="number"  class="b" placeholder="Rate" /><br><br></b>
+        <input autofocus type="number"  class="c" placeholder="Time" /><br><br>
+        
+    </form> 
+</div>
+   
+    <div class="btn">
+<button class="btn" type="submit"> 
+            Submit 
+        </button> 
+
+   </div>
+
+  
+
+    <script type="text/javascript"> 
+        
+
+    function simpleInterest() { 
+let p = parseFloat(document.querySelector('.a').value);
+let r = parseFloat(document.querySelector('.b').value);
+let t = parseFloat(document.querySelector('.c').value);
+      
+let output = document.getElementById("output");
+    
+          
+let interest = p * r * t;      output.textContent = "Answer: " + interest;
+          
+} 
+
+const btn = document.querySelector(".btn");
+   
+btn.onclick = function (){
+    simpleInterest();
+  
+}
+    </script> 

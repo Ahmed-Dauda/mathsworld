@@ -1,0 +1,65 @@
+*{
+    box-sizing: border-box;
+    max-width: 1200px;
+}
+
+body{
+    width: 100%;
+}
+
+.top{
+    margin-top: 30px;
+    margin-left: 4%;
+    position: relative;
+    width: 90%;
+    height: 250px;
+    text-align: center;
+    background-color: #000000;
+    color: white;
+    box-shadow: 2px 5px 10px green;
+    padding: 0px 10px 0px 10px;
+    border: 2px solid green;
+    
+}
+
+.input-val{
+    position: relative;
+    padding: 70px;
+}
+
+.input-val > .form-input{
+    
+    position: absolute;
+    top: 50%;
+    left: 53%;
+    transform: translate(-50%, -50%);
+}
+
+.form-input > input{
+    border: 2px solid black;
+    border-radius: 50%;
+    width: 150px;
+    height: 30px;
+    text-align: center;
+}
+
+.btn{
+    position: relative;
+   
+
+}
+
+.btn > button{
+    padding: 0;
+    background-color: green;
+    color: white;
+    border: 2px solid black;
+    width: 150px;
+    height: 30px;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
