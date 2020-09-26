@@ -2,7 +2,7 @@
 
 <html>
     <head>
-        <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+        <meta name = "viewport"  content="width= device-width, initial-scale= 1.0">
         <link rel="stylesheet" href="styles/style.css"/>
         <title>Simple Interest</title>
     </head>
@@ -11,26 +11,26 @@
         <div class="top">
    <h2 class="top-output">Simple Interest</h2>
    <hr>
-   <p class="top-output">To calculate Simple Interest: Enter principal, rate and time</p>
-            <hr>
+  <p  class="top-output">To calculate Simple Interest: principal, rate and time. </p>
+   <hr>
    <h2 class="top-output" id="output"></h2>
-         
-        </div>
+         <hr>
+     </div>
         
         <div class="input-val">
-    <form class="form-input" action="index.htl" method="post"> 
-
-        <input autofocus type="number" class="a"  placeholder="Principal"/><br> 
-        <input autofocus type="number"  class="b" placeholder="Rate" /><br><br></b>
-        <input autofocus type="number"  class="c" placeholder="Time" /><br><br>
-        
-    </form> 
-</div>
-   
-    <div class="btn">
-<button class="btn" type="submit"> 
+   <form  class="form-value">
+        <input autofocus type="text" class="a"  placeholder="Principal"/><br> 
+        <input autofocus type="text"  class="b" placeholder="Rate" /><br><br></b>
+        <input autofocus type="text"  class="c" placeholder="Time" /><br><br>
+        <button class="btn" type="button"> 
             Submit 
         </button> 
+        </form>
+   
+</div>
+   
+    <div class="bt">
+
 
    </div>
 
@@ -47,7 +47,8 @@ let t = parseFloat(document.querySelector('.c').value);
 let output = document.getElementById("output");
     
           
-let interest = p * r * t;      output.textContent = "Answer: " + interest;
+let interest = p * r * t;      
+output.textContent = "Answer: " + interest;
           
 } 
 
